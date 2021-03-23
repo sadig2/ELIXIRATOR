@@ -25,11 +25,15 @@ def mass(ship_mass, params=[]):
 
         while(launch>40):
             ov_fuel+=launch
-            print(launch)
             launch = calc_launch_fuel(launch, p[0])
 
     
-    print(ov_fuel)
+    print("weight of fuel = ",ov_fuel)
         
 mass(28801, [(9.807, 1.62), (1.62, 9.807)])
+
+mass( 14606, [(9.807,3.711),(3.711, 9.807)])
+
+mass( 75432, [(9.807,1.62),(1.62, 3.711),( 3.711,9.807 )])
+
 
